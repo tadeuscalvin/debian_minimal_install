@@ -4,28 +4,26 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# abrir terminal
+# open terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-# fecha janela focada
+# kill focused window
 bindsym $mod+q kill
 
-# abre o dmenu
+# open the dmenu
 bindsym $mod+d exec dmenu_run -b
 
-# meus atalhos
+# my shortcuts
 bindsym $mod+b exec firefox &
 bindsym $mod+p exec pcmanfm &
-bindsym $mod+t exec ./Downloads/Telegram/Telegram&
 
 # autostart
 exec_always ~/.random_wallpaper.sh
 exec --no-startup-id nm-applet&
 exec --no-startup-id volumeicon&
-exec --no-startup-id megasync&
 exec --no-startup-id parcellite&
 
-# janelas sem titulos
+# no title window
 new_window 1pixel
 new_float 1pixel
 
@@ -68,10 +66,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace term
-bindsym $mod+2 workspace web
-bindsym $mod+3 workspace telegram
-bindsym $mod+4 workspace text
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -80,10 +78,10 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace term
-bindsym $mod+Shift+2 move container to workspace web
-bindsym $mod+Shift+3 move container to workspace telegram
-bindsym $mod+Shift+4 move container to workspace text
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
