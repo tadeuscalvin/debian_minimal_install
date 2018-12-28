@@ -10,18 +10,18 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+q kill
 
-# open the dmenu
+# open dmenu
 bindsym $mod+d exec dmenu_run -b
 
-# my shortcuts
+# shortcuts
 bindsym $mod+b exec firefox &
 bindsym $mod+p exec pcmanfm &
 
 # autostart
-exec_always ~/.random_wallpaper.sh
 exec --no-startup-id nm-applet&
 exec --no-startup-id volumeicon&
 exec --no-startup-id parcellite&
+exec_always ~/.random_wallpaper.sh&
 
 # no title window
 new_window 1pixel
