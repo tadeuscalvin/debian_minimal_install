@@ -80,19 +80,20 @@ if [ ! -d ".i3" ]; then
 fi
 
 # copy the config. file of i3 to you system
-cp debian_minimal_install/config								.i3
+cp debian_minimal_install/config						.i3
 
 # copy the config. file of status bar
-cp debian_minimal_install/.i3status.conf						.
+cp debian_minimal_install/.i3status.conf					.
 
 # This is a script for a randomly changing 
 # wallpaper. A little useless, but cool
 # It will assume that your images are in 
 # ~/Images/Wallpaper, remember to adjust this!
 cp debian_minimal_install/.random_wallpaper.sh					.
+chmod +x .random_wallpaper.sh
 
 # The bashrc, you certainly know what is it, right?
-cp debian_minimal_install/.bashrc								.
+cp debian_minimal_install/.bashrc						.
 
 echo -e "\n"
 echo -e "\n"
